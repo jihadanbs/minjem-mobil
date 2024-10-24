@@ -1,27 +1,28 @@
-# 💰 HutangMU - Debt Management System
+# 🚗 Minjem Mobil - Car Rental Management System
 
-HutangMU is a simple web-based application designed to help users manage debts. With this system, users can record and track debts, set reminders, and view the status of repayments. The application aims to simplify debt management for individuals or small businesses.
+Minjem Mobil is a web-based application designed to help manage car rental operations. The system provides a platform for both car rental companies and customers to easily manage bookings, track rental availability, and manage transactions.
 
 ## 📋 Features
 
-- **Debt Recording**: Easily record who owes you money or track debts you owe to others.
-- **Debt Reminders**: Set reminders to ensure timely repayments.
-- **Payment Status**: Track payment history and check the status of repayments.
-- **Simple Dashboard**: View a summary of all active debts and payments due.
-- **Search and Filter**: Find specific debts based on status, amount, or debtor information.
+- **Car Management**: Add, update, or remove available cars for rent.
+- **Rental Bookings**: Customers can book available cars for specific dates.
+- **Transaction Management**: Track rental payments and outstanding balances.
+- **Rental History**: View past and current rentals for each customer.
+- **User Authentication**: Secure login system for both customers and admins.
+- **Dashboard**: Admin dashboard for managing all rental operations in one place.
 
 ## 🚀 How to Use
 
 1. **Clone the Repository**
 
-    To start using the system, clone this repository to your local machine:
+    To begin using the system, clone the repository to your local machine:
 
     ```bash
     # Clone this repository
-    $ git clone https://github.com/jihadanbs/HutangMU
+    $ git clone https://github.com/jihadanbs/minjem-mobil
 
-    # Navigate to the repository
-    $ cd HutangMU
+    # Navigate to the repository directory
+    $ cd minjem-mobil
 
     # Open the project in your preferred text editor
     $ code .
@@ -29,15 +30,15 @@ HutangMU is a simple web-based application designed to help users manage debts. 
 
 2. **Install Dependencies**
 
-    Make sure you have PHP, Composer, and a database such as MySQL installed. Then, install the dependencies by running:
+    Ensure you have PHP, Composer, and MySQL installed on your system. Then, install the required dependencies:
 
     ```bash
     composer install
     ```
 
-3. **Setup the Database**
+3. **Set Up the Database**
 
-    - Create a new MySQL database for this project.
+    - Create a new MySQL database for the project.
     - Copy `.env.example` to `.env` and update the database credentials in the `.env` file:
 
     ```bash
@@ -48,13 +49,21 @@ HutangMU is a simple web-based application designed to help users manage debts. 
 
 4. **Run Database Migrations**
 
-    Migrate the database tables with the following command:
+    Set up the database by running the migrations:
 
     ```bash
     php artisan migrate
     ```
 
-5. **Run the Application**
+5. **Seed the Database (Optional)**
+
+    You can seed the database with some initial data using the following command:
+
+    ```bash
+    php artisan db:seed
+    ```
+
+6. **Run the Application**
 
     Start the local development server:
 
@@ -62,38 +71,40 @@ HutangMU is a simple web-based application designed to help users manage debts. 
     php artisan serve
     ```
 
-    Your application will now be accessible at `http://localhost:8000`.
+    The application will be available at `http://localhost:8000`.
 
 ## 🖥️ Deployment
 
-To deploy HutangMU online, you can follow one of these methods:
+To deploy Minjem Mobil to the web, you can use:
 
-- **Heroku**: Deploy using [Heroku](https://devcenter.heroku.com/articles/getting-started-with-php).
-- **VPS/Shared Hosting**: Upload the project to your server that supports PHP and MySQL. Configure your environment variables and run migrations on the server.
+- **Heroku**: Refer to the [Heroku documentation](https://devcenter.heroku.com/articles/getting-started-with-php) for deploying PHP applications.
+- **VPS/Shared Hosting**: Upload the project files to your server, ensure PHP and MySQL are set up, and configure the `.env` file accordingly.
 
 ## 📝 Contributing
 
-Contributions are welcome! If you want to add new features or fix bugs, you can contribute by following these steps:
+If you wish to contribute to this project, follow these steps:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -am 'Add new feature'`).
-4. Push to your branch (`git push origin feature-branch`).
-5. Submit a pull request.
+2. Create a new branch for your feature (`git checkout -b feature-branch`).
+3. Make the necessary changes and commit them (`git commit -am 'Add new feature'`).
+4. Push the branch to your forked repository (`git push origin feature-branch`).
+5. Submit a pull request for review.
 
 ## 🛠️ Technologies Used
 
 - **PHP**: Backend scripting language.
 - **Laravel**: Web application framework.
-- **MySQL**: Relational database management.
+- **MySQL**: Relational database for storing data.
 - **JavaScript**: Frontend scripting.
-- **HTML/CSS**: Frontend design.
+- **HTML/CSS**: User interface and design.
+- **Composer**: Dependency management for PHP.
 
 ## 🏗️ Future Features
 
-- **Notification System**: Integrate email or SMS notifications for upcoming due payments.
-- **User Roles**: Implement user roles for different types of access (e.g., admin, user).
-- **Multi-Currency Support**: Add support for recording debts in multiple currencies.
+- **Multi-Language Support**: Allow the platform to support multiple languages.
+- **Car Availability Calendar**: Visual calendar to track car availability.
+- **SMS/Email Notifications**: Send automatic notifications for booking confirmations or reminders.
+- **Mobile App**: Integrate the platform with a mobile app for easy access.
 
 ## 🤝 License
 
